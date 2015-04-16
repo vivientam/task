@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body class="body">
+  <%= render "layouts/header" %>
+  <main class="container" aria-role="main">
+    <%= yield %>
+  </main>
+  <%= render "layouts/footer" %>
+
+</body>
+</html>
